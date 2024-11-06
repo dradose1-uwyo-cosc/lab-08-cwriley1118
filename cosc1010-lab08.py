@@ -106,4 +106,4 @@ print("*" * 75)
 # Create a second function that just does the square root operation 
     # If the number you are trying to take the square root of is negative, return null
 
-Use same as part two but with the three variables. For two answers do +sqrt and -sqrt. for sqrt do **.
+Use same as part two but with the three variables. For two answers do +sqrt and -sqrt. for sqrt do **. Also check that you cant devide by zero.
