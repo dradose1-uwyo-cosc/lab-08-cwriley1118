@@ -1,19 +1,26 @@
-# Your Name Here
+# Colton Riley
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section:
+# Submission Date 11/6/26
+# Lab 08
+# Lab Section: 15
 # Sources, people worked with, help given to:
-# your
-# comments
-# here
+# Used https://www.w3schools.com/python/python_try_except.asp even though i have used try-except blocks before to make sure i know how it works
 
 
 # Write a function that will properly check strings to see if they are an int or float, and convert them if so
 # If they can't be converted return false
 # Other wise return the converted int or float 
 # Floats should only have one decimal point in them 
-
+def is_number(arg):
+    try:
+        output = int(arg)
+        return output
+    except ValueError:
+        try:
+            output = float(arg)
+            return output
+        except ValueError:
+            return False
 
 print("*" * 75)
 
@@ -37,7 +44,52 @@ print("*" * 75)
 # Exit on the word exit
 # Remember all inputs are strings, but the function needs ints or floats
 # Call your function and print the resulting list
+yvalues = []
+def main():
+    while True:
+        m = input("Enter your slope, m or 'exit' to quit: ")
+        if is_number(m):
+            m = is_number(m)
+        elif 'exit' in m:
+            break
+        else:
+            print("Please enter a usable value for m")
 
+        b = input("Enter your y-intercept, b or 'exit' to quit: ")
+        if is_number(b):
+            b = is_number(b)
+        elif 'exit' in b:
+            break
+        else:
+            print("Please enter a usable value for b")
+        
+        lx = input("Enter your lower x bound or 'exit' to quit: ")
+        if is_number(lx):
+            lx = is_number(lx)
+        elif 'exit' in lx:
+            break
+        else:
+            print("Please enter a usable value for lx")
+
+        ux = input("Enter your upper x bound or 'exit' to quit: ")
+        if is_number(ux):
+            ux = is_number(ux)
+        elif 'exit' in ux:
+            break
+        else:
+            print("Please enter a usable value for ux")
+
+        if lx > ux:
+            print("Please enter correct bounds")
+        else:
+            break
+        
+    for i in range(lx, ux):
+        y = (m * i) + b
+        yvalues.append(y)
+
+main()
+print(yvalues)
 print("*" * 75)
 
 
