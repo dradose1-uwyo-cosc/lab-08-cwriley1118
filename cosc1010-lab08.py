@@ -35,7 +35,7 @@ print("*" * 75)
     # b, the intercept
     # a lower x bound
     # an upper x bound
-# Return a list for all values of y for the given x range, inclusive (whole number X's only)
+# Return a list for all values of y for the given x range, inclusive (whole number X's only) 
 # Check to make sure that the lower bound is less than or equal to the upper bound
 # m, b can be floats or integers
 # the bounds must be integers, if not return false
@@ -49,43 +49,48 @@ def main():
     while True:
         m = input("Enter your slope, m or 'exit' to quit: ")
         if is_number(m):
-            m = is_number(m)
-        elif 'exit' in m:
+            m1 = is_number(m)
+        elif 'exit' in m.lower():
             break
         else:
-            print("Please enter a usable value for m")
+            print("Please enter a valid value for m")
+            continue
 
         b = input("Enter your y-intercept, b or 'exit' to quit: ")
         if is_number(b):
-            b = is_number(b)
-        elif 'exit' in b:
+            b1 = is_number(b)
+        elif 'exit' in b.lower():
             break
         else:
-            print("Please enter a usable value for b")
-        
+            print("Please enter a valid value for b")
+            continue
+
         lx = input("Enter your lower x bound or 'exit' to quit: ")
         if is_number(lx):
-            lx = is_number(lx)
-        elif 'exit' in lx:
+            lx1 = is_number(lx)
+        elif 'exit' in lx.lower():
             break
         else:
-            print("Please enter a usable value for lx")
+            print("Please enter a valid value for lx")
+            continue
 
         ux = input("Enter your upper x bound or 'exit' to quit: ")
         if is_number(ux):
-            ux = is_number(ux)
-        elif 'exit' in ux:
+            ux1 = is_number(ux)
+        elif 'exit' in ux.lower():
             break
         else:
-            print("Please enter a usable value for ux")
+            print("Please enter a valid value for ux")
+            continue
 
-        if lx > ux:
-            print("Please enter correct bounds")
+        if lx1 > ux1:
+            print("Please enter valid bounds")
+            continue
         else:
             break
         
-    for i in range(lx, ux):
-        y = (m * i) + b
+    for i in range(lx1, ux1 + 1):
+        y = (m1 * i) + b1
         yvalues.append(y)
 
 main()
@@ -100,3 +105,5 @@ print("*" * 75)
 # Create a loop like above to prompt the user for input for the three values
 # Create a second function that just does the square root operation 
     # If the number you are trying to take the square root of is negative, return null
+
+Use same as part two but with the three variables. For two answers do +sqrt and -sqrt. for sqrt do **.
