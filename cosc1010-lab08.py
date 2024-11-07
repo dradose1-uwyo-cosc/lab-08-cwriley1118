@@ -5,7 +5,8 @@
 # Lab Section: 15
 # Sources, people worked with, help given to:
 # Used https://www.w3schools.com/python/python_try_except.asp even though i have used try-except blocks before to make sure i know how it works
-
+# Recieved help from Jedadia (appologies if that is spelled wrong) on the first part and i was using type error instead of valueerror
+# Gave help to Colter on how i did the entireity of part two
 
 # Write a function that will properly check strings to see if they are an int or float, and convert them if so
 # If they can't be converted return false
@@ -106,4 +107,56 @@ print("*" * 75)
 # Create a second function that just does the square root operation 
     # If the number you are trying to take the square root of is negative, return null
 
-Use same as part two but with the three variables. For two answers do +sqrt and -sqrt. for sqrt do **. Also check that you cant devide by zero.
+# Use same as part two but with the three variables. For two answers do +sqrt and -sqrt. for sqrt do **. Also check that you cant devide by zero.
+
+def main():
+    while True:
+        a = input("Enter your value for a (ax^2 + bx + c = 0) or 'exit' to quit: ")
+        if is_number(a):
+            a1 = is_number(a)
+        elif 'exit' in a.lower():
+            break
+        else:
+            print("Please enter a valid value for m")
+            continue
+
+        b = input("Enter your  or 'exit' to quit: ")
+        if is_number(b):
+            b1 = is_number(b)
+        elif 'exit' in b.lower():
+            break
+        else:
+            print("Please enter a valid value for b")
+            continue
+
+        lx = input("Enter your lower x bound or 'exit' to quit: ")
+        if is_number(lx):
+            lx1 = is_number(lx)
+        elif 'exit' in lx.lower():
+            break
+        else:
+            print("Please enter a valid value for lx")
+            continue
+
+        ux = input("Enter your upper x bound or 'exit' to quit: ")
+        if is_number(ux):
+            ux1 = is_number(ux)
+        elif 'exit' in ux.lower():
+            break
+        else:
+            print("Please enter a valid value for ux")
+            continue
+
+        if lx1 > ux1:
+            print("Please enter valid bounds")
+            continue
+        else:
+            break
+        
+    for i in range(lx1, ux1 + 1):
+        y = (m1 * i) + b1
+        yvalues.append(y)
+
+main()
+print(yvalues)
+print("*" * 75)
