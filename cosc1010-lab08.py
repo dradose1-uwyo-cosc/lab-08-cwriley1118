@@ -109,7 +109,7 @@ print("*" * 75)
 
 # Use same as part two but with the three variables. For two answers do +sqrt and -sqrt. for sqrt do **. Also check that you cant devide by zero.
 
-def main():
+def quad():
     while True:
         a = input("Enter your value for a (ax^2 + bx + c = 0) or 'exit' to quit: ")
         if is_number(a):
@@ -157,6 +157,6 @@ def main():
         y = (m1 * i) + b1
         yvalues.append(y)
 
-main()
+quad()
 print(yvalues)
 print("*" * 75)
