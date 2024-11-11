@@ -111,44 +111,35 @@ print("*" * 75)
 
 def quad():
     while True:
-        a = input("Enter your value for a (ax^2 + bx + c = 0) or 'exit' to quit: ")
+        a = input("Enter your value for 'a' (ax^2 + bx + c = 0) or 'exit' to quit: ")
         if is_number(a):
             a1 = is_number(a)
         elif 'exit' in a.lower():
             break
         else:
-            print("Please enter a valid value for m")
+            print("Please enter a valid value for 'a'")
             continue
 
-        b = input("Enter your  or 'exit' to quit: ")
+        b = input("Enter your value for 'b' (ax^2 + bx + c = 0) or 'exit' to quit: ")
         if is_number(b):
             b1 = is_number(b)
         elif 'exit' in b.lower():
             break
         else:
-            print("Please enter a valid value for b")
+            print("Please enter a valid value for 'b'")
             continue
 
-        lx = input("Enter your lower x bound or 'exit' to quit: ")
-        if is_number(lx):
-            lx1 = is_number(lx)
-        elif 'exit' in lx.lower():
+        c = input("Enter your value for 'c' (ax^2 + bx + c) or 'exit' to quit: ")
+        if is_number(c):
+            c1 = is_number(c)
+        elif 'exit' in c.lower():
             break
         else:
-            print("Please enter a valid value for lx")
+            print("Please enter a valid value for 'c'")
             continue
 
-        ux = input("Enter your upper x bound or 'exit' to quit: ")
-        if is_number(ux):
-            ux1 = is_number(ux)
-        elif 'exit' in ux.lower():
-            break
-        else:
-            print("Please enter a valid value for ux")
-            continue
-
-        if lx1 > ux1:
-            print("Please enter valid bounds")
+        if a1 = 0
+            print("The value for 'a' cannot equal 0. Please enter a valid input")
             continue
         else:
             break
