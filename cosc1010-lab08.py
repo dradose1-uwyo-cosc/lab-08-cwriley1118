@@ -138,16 +138,16 @@ def quad():
             print("Please enter a valid value for 'c'")
             continue
 
-        if a1 = 0
+        if a1 == 0:
             print("The value for 'a' cannot equal 0. Please enter a valid input")
             continue
         else:
             break
         
-    for i in range(lx1, ux1 + 1):
-        y = (m1 * i) + b1
-        yvalues.append(y)
+    sol1 = (-b1 + ((b1**2)-4*a1*c1)**.5)/(2*a1)
 
+    sol2 = (-b1 - ((b1**2)-4*a1*c1)**.5)/(2*a1)
+
+    print(f"x = {sol1}, x = {sol2}")
 quad()
-print(yvalues)
 print("*" * 75)
