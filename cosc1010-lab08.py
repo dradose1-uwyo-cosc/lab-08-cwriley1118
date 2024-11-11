@@ -5,7 +5,7 @@
 # Lab Section: 15
 # Sources, people worked with, help given to:
 # Used https://www.w3schools.com/python/python_try_except.asp even though i have used try-except blocks before to make sure i know how it works
-# Recieved help from Jedadia (appologies if that is spelled wrong) on the first part and i was using type error instead of valueerror
+# Recieved help from Jedadiah (appologies if that is spelled wrong) on the first part and i was using type error instead of valueerror
 # Gave help to Colter on how i did the entireity of part two
 
 # Write a function that will properly check strings to see if they are an int or float, and convert them if so
